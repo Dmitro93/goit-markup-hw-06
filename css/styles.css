@@ -124,7 +124,7 @@ height: 4px;
 }
 
 .items-nav {
-    font-family: "Roboto", sans-serif;
+    
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -253,33 +253,39 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .hero {
 background-color: #2e2f42;
-padding: 188px 0;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office.jpg");
-max-width: 1440px;
+padding: 72px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office-1x-mob.jpg");
+max-width: 320px;
 margin: 0 auto;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-  }
+
+@media screen and (min-resolution: 2x), (--webkit-min-device-pixel-ratio: 2) {
+    
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office-2x-mob.jpg");
+   
+   }
+}
+  
 
   
 
 .title {
-    font-family: "Roboto", sans-serif;
+    
     font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
+font-size: 36px;
+line-height: 1.1;
 letter-spacing: 0.02em;
 text-align: center;
 color: white;
-max-width: 496px;
+max-width: 216px;
 margin: 0 auto;
-margin-bottom: 40px;
+margin-bottom: 72px;
 }
 
 .btn {
-   font-family: "Roboto", sans-serif;
-font-weight: 500;
+   font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
@@ -305,45 +311,37 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .advantages-list {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    flex-wrap: wrap;
+            gap: 72px;
       
 }
 
 .advantages-ic {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 100px;
-    border: 1px solid #8e8f99;
-border-radius: 4px;
-margin-bottom: 8px;
-background-color: #f4f4fd;
-height: 112px;
-    
+  display: none;
+        
 }
 
 
 
 .advantages-items {
-    font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
 letter-spacing: 0.02em;
 color: #2e2f42;
-margin-bottom: 8px;
+text-align: center;
+
 
 
 }
 
 .li-items {
-    width: calc((100% - 72px) / 4);
+    width: 100%;
     
 }
 
 .text-title {
-    font-family: "Roboto", sans-serif;
+font-weight: 500;    
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -355,8 +353,7 @@ color: #434455;
 }
 
 .title-our {
-    font-family: "Roboto", sans-serif;
-font-weight: 700;
+    font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
@@ -948,6 +945,39 @@ letter-spacing: 0.04em;
     display: none;
    
 }
+
+.hero {
+padding: 112px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office-1x-tab.jpg");
+max-width: 768px;
+
+@media screen and (min-resolution: 2x), (--webkit-min-device-pixel-ratio: 2) {
+    
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office-2x-tab.jpg");
+   
+   }
+
+}
+
+.title {
+        font-size: 56px;
+line-height: 1.07;
+max-width: 496px;
+margin-bottom: 36px;
+}
+
+.advantages-list {
+                gap: 72px 24px;
+      
+}
+
+.li-items {
+    width: calc((100% - 24px) / 2);
+}
+
+.advantages-items {
+    text-align: left;
+}
 }
     
 @media screen and (min-width: 1158px) {
@@ -997,4 +1027,56 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
+.hero {
+padding: 188px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office.jpg");
+max-width: 1440px;
+
+@media screen and (min-resolution: 2x), (--webkit-min-device-pixel-ratio: 2) {
+    
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office-2x-desk.jpg");
+   
+   }
+
+}
+
+.title {
+        margin-bottom: 48px;
+}
+
+.advantages-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+      
+}
+
+.advantages-ic {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 100px;
+    border: 1px solid #8e8f99;
+border-radius: 4px;
+margin-bottom: 8px;
+background-color: #f4f4fd;
+height: 112px;
+    
+}
+
+.advantages-items {
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+margin-bottom: 8px;
+
+}
+
+.li-items {
+    width: calc((100% - 72px) / 4);
+}
+
+.text-title {
+    font-weight: 400;
+}
 }
