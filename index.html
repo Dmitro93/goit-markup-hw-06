@@ -120,12 +120,15 @@ problem to walk away with the perfect and creative solution. </p>
 
 
 
-<section class="section team"> 
+<!-- <section class="section team"> 
     <div class="container">
     <h2 class="title-our">Our Team</h2>
     
     <ul class="team-list">
-        <li class="list-items"><img src="./images/1.jpg" alt="Mark Guerrero" width="264"/>
+        <li class="list-items">
+            <img 
+            srcset="./images/1.jpg 1x, ./images/card-2x-1.jpg 2x"
+            src="./images/1.jpg" alt="Mark Guerrero" width="264"/>
             
             <div class="card"><h3 class="name">Mark Guerrero</h3><p class="name-items">Product Designer</p>
                 <ul class="social-list">
@@ -145,7 +148,9 @@ problem to walk away with the perfect and creative solution. </p>
             
               
             
-        <li class="list-items"><img src="./images/2.jpg" alt="Tom Ford" width="264"/>
+        <li class="list-items"><img 
+            srcset="./images/2.jpg 1x, ./images/card-2x-2.jpg 2x"
+            src="./images/2.jpg" alt="Tom Ford" width="264"/>
             <div class="card"><h3 class="name">Tom Ford</h3> <p class="name-items">Frontend Developer</p> <ul class="social-list">
         <li class="social-icon"><a class="bg-icon" href=""><svg class="team-icons" width="16" height="16">
             <use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
@@ -158,7 +163,9 @@ problem to walk away with the perfect and creative solution. </p>
     </ul></div>
        
         </li>
-        <li class="list-items"><img src="./images/3.jpg" alt="Camila Garcia" width="264"/>
+        <li class="list-items"><img 
+            srcset="./images/3.jpg 1x, ./images/card-2x-3.jpg 2x"
+            src="./images/3.jpg" alt="Camila Garcia" width="264"/>
             <div class="card"><h3 class="name">Camila Garcia</h3><p class="name-items">Marketing</p> <ul class="social-list">
         <li class="social-icon"><a class="bg-icon" href=""><svg class="team-icons" width="16" height="16">
             <use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
@@ -171,7 +178,9 @@ problem to walk away with the perfect and creative solution. </p>
     </ul></div>
        
         </li>
-        <li class="list-items"><img src="./images/4.jpg" alt="Daniel Wilson" width="264"/>
+        <li class="list-items"><img 
+            srcset="./images/4.jpg 1x, ./images/card-2x-4.jpg 2x"
+            src="./images/4.jpg" alt="Daniel Wilson" width="264"/>
             <div class="card"><h3 class="name">Daniel Wilson</h3><p class="name-items">UI Designer</p><ul class="social-list">
         <li class="social-icon"><a class="bg-icon" href=""><svg class="team-icons" width="16" height="16">
             <use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
@@ -186,17 +195,25 @@ problem to walk away with the perfect and creative solution. </p>
         </li>
     </ul>
     </div>
-</section>
+</section> -->
 
 
 
-<!-- <section class="section">
+<section class="section"> 
     <div class="container">
     <h2 class="title-our">Our Portfolio</h2>
     <ul class="portfolio-list">
         
         
-            <li class="port-li"><div class="card-project-text"><img src="./images/5.jpg" alt="Banking App" width="360"/>
+            <li class="port-li"><div class="card-project-text">
+                <picture>
+                    <source srcset="./images/5.jpg 1x, ./images/port-desk1-2x.jpg 2x" media="(min-width: 1158px)"/>
+                    <source srcset="./images/port-tab1-1x.jpg 1x, ./images/port-tab1-2x.jpg 2x" media="(min-width: 768px)"/>
+                    <source srcset="./images/port-mob1-1x.jpg 1x, images/port-mob1-2x.jpg 2x" 
+                    media="(min-width: 320px)"/>
+                    <img src="./images/5.jpg" alt="Banking App" width="360"/>
+                </picture>
+                
                 <p class="text-mark">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
         </div>
             <div class="card-project"><h3 class="portfolio">Banking App</h3> <p class="portfolio-items">App</p></div></li>
@@ -232,7 +249,7 @@ problem to walk away with the perfect and creative solution. </p>
         
     </ul>
     </div>
-</section>  -->
+</section>  
 
 </main>
 

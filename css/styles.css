@@ -350,7 +350,10 @@ color: #434455;
 
  .team {
     background-color: #f4f4fd;
+    
 }
+
+
 
 .title-our {
     font-weight: 700;
@@ -373,7 +376,10 @@ margin-bottom: 72px;
 .team-list {
     display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px;
+        
      }
 
      .social-list {
@@ -434,7 +440,7 @@ margin-bottom: 72px;
 }
 
 .name {
-    font-family: "Roboto", sans-serif;
+    
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -445,7 +451,7 @@ margin-bottom: 8px;
 }
 
 .name-items {
-    font-family: "Roboto", sans-serif;
+    
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -457,7 +463,7 @@ color: #434455;
   
 
 .portfolio {
-    font-family: "Roboto", sans-serif;
+    
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -468,7 +474,7 @@ margin-bottom: 8px;
 
 
 .portfolio-items {
-    font-family: "Roboto", sans-serif;
+    
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -477,14 +483,9 @@ color: #434455;
 }
 
 .port-li {
-width: calc((100% - 96px)) / 6;
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.port-li:hover {
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
-
-}
 .port-li:hover .text-mark {
     transform: translateY(0%);
     
@@ -496,7 +497,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .text-mark {
-    font-family: "Roboto", sans-serif;
+    
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -978,6 +979,20 @@ margin-bottom: 36px;
 .advantages-items {
     text-align: left;
 }
+
+.team-list {
+        gap: 24px;
+     }
+
+     .portfolio-list {
+        gap: 72px 24px; 
+     }
+
+     .port-li {
+     width: calc((100% - 24px) / 2);
+     }
+
+     
 }
     
 @media screen and (min-width: 1158px) {
@@ -1079,4 +1094,21 @@ margin-bottom: 8px;
 .text-title {
     font-weight: 400;
 }
+
+.portfolio-list {
+        gap: 48px 24px; 
+     }
+
+     .port-li {
+width: calc((100% - 48px) / 3);
+box-shadow: none;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.port-li:hover {
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+
+}
+
+
 }
